@@ -72,7 +72,20 @@ fun convertUnits(){
 }
 
 
-    
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        Text(
+            text = "Unit Converter",
+            style= MaterialTheme.typography.headlineLarge,
+            color= Color.White,
+            textAlign = TextAlign.Center,
+            fontSize = 50.sp,
+
+            modifier= Modifier.background(Purple40).fillMaxWidth()
+        )
+    }
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -80,7 +93,7 @@ fun convertUnits(){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         //In this the elements are stacked below each other
-        Text(text = "Unit Converter", style= MaterialTheme.typography.headlineLarge, )
+                   
         Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(value = inputvalue,
             onValueChange = {
